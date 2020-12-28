@@ -22,7 +22,7 @@ connection.once('open', () => {
 
 const sentimentRouter = require('./routes/sentiment')
 
-app.use('/sentiment', sentimentRouter)
+app.use('/', sentimentRouter)
 
 app.listen(port, () => {
     console.log(`Server is running on port: ${port}`)
